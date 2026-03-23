@@ -1,12 +1,10 @@
 package mocktest
 
-import "fmt"
-
 type SomeDep struct {
 }
 
-func (d *SomeDep) SomeMethod() {
-	fmt.Println("SomeMethod called")
+func (d *SomeDep) SomeMethod() string {
+	return "SomeDep.SomeMethod() called"
 }
 
 func NewSomeDep() *SomeDep {
